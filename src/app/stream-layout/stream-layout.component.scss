@@ -9,7 +9,7 @@ div.outer-container {
     text-align: center;
 }
 
-app-ai-chat-interactor {
+app-ai-chat-interactor, app-talking-chatter-manager {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -41,6 +41,15 @@ app-team-logo {
     left: 870px;
     width: 456px;
     z-index: 100;
+}
+
+app-gameboy-advance {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1003;
 }
 
 app-ads {
@@ -136,6 +145,14 @@ video#footer {
     z-index: 1001;
 }
 
+#specialEmotePopupContainer {
+    position: absolute;
+    width: 1566px;
+    height: 926px;
+    left: 274px;
+    top: 0px;
+}
+
 #bottomEdgeEmotePopupContainer {
     position: absolute;
     width: 1566px;  //beware overflow due to emote size
@@ -156,7 +173,7 @@ video#footer {
     position: absolute;
     width: 1566px;  //beware overflow due to emote size
     height: 30%;
-    top: 0px;  
+    top: 0px;
     left: 274px;
 }
 

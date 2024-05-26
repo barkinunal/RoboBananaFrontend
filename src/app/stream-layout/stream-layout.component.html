@@ -8,6 +8,8 @@
     <app-ai-chat-interactor></app-ai-chat-interactor>
     <app-animation-host></app-animation-host>
     <app-cool></app-cool>
+    <app-talking-chatter-manager></app-talking-chatter-manager>
+    <app-gameboy-advance></app-gameboy-advance>
     <app-prediction-render></app-prediction-render>
     <app-poll-render></app-poll-render>
     <app-vod-review style="background-image: url('assets/TextBox_Container.png');"></app-vod-review>
@@ -22,11 +24,8 @@
         <img id="footer" src="{{themeService.getMiddleImage()}}" />
     </ng-container>
     <img id="left" src="{{themeService.getLeftImage()}}" />
-    <app-emote-popups id="bottomEdgeEmotePopupContainer" name="bottomEdge" direction="up"></app-emote-popups>
     <app-emote-popups-multiple id="bottomEdgeEmotePopupContainer" name="bottomEdgeMultiple" direction="up"></app-emote-popups-multiple>
-    <app-emote-popups id="leftEdgeEmotePopupContainer" name="leftEdge" direction="right"></app-emote-popups>
-    <app-emote-popups id="topEdgeEmotePopupContainer" name="topEdge" direction="down"></app-emote-popups>
-    <app-emote-popups id="rightEdgeEmotePopupContainer" name="rightEdge" direction="left"></app-emote-popups>
+    <app-emote-popups-special id="specialEmotePopupContainer" name="special" direction="up"></app-emote-popups-special>
 </div>
 
 <div class="disabled" *ngIf="!enabled">

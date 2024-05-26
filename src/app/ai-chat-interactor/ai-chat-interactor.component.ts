@@ -109,7 +109,7 @@ export class AiChatInteractorComponent implements OnInit {
       }
 
       this.http.post("https://api.openai.com/v1/chat/completions", {
-        model: "gpt-4-1106-preview",
+        model: "gpt-4o",
         messages: [
           ...this.SYSTEM_PROMPTS.map((prompt) => {
             return {
@@ -330,13 +330,13 @@ export class AiChatInteractorComponent implements OnInit {
         });
       }
 
-      if (this.chatOnlyMode) {
+      if (this.chatOnlyMode && data.isT3) {
         if (this.pendingTTS.length === 0 && !this.isTalking && message.toLowerCase().startsWith("hooj") && !this.chatOnlyLocked) {
           if (this.chatOnlyRole != 0 && data.roles.some((role: any) => role.id === this.chatOnlyRole)) return;
           this.pendingTTS.push({
             message: message,
             senderName: data.displayName,
-            voiceID: "knrPHWnBmmDHMoiMeP3l",
+            voiceID: "rCmVtv8cYU60uhlsOo1M",
             voiceName: ""
           });
         }
